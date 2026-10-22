@@ -4,45 +4,203 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Texno Markaz premium — narxlash ilovasi</title>
-<meta name="description" content="Texno Markaz premium telefon narxlash ilovasi — 105 soniyalik namoyish videosi.">
+<meta name="description" content="Texno Markaz premium telefon narxlash ilovasi: video va brend egasi uchun taqdimot.">
 <meta property="og:title" content="Texno Markaz premium — narxlash ilovasi">
 <meta property="og:description" content="Telegram ichidagi telefon narxlash ilovasi: baholash, arizalar, nasiya, e'lonlar va aksiyalar.">
 <meta property="og:image" content="texno-video-poster.jpg">
 <meta name="theme-color" content="#0B0B0D">
 <style>
-  :root { --bg:#0B0B0D; --card:#151517; --text:#F2EFE9; --hint:#A19C92; --gold:#C9A86A; --line:rgba(201,168,106,.3);
-          --grad:linear-gradient(135deg,#E9D3A1 0%,#C9A86A 45%,#9C7B43 100%); }
+  :root { --bg:#0B0B0D; --bg2:#121214; --card:#18181B; --text:#F2EFE9; --body:#C9C4BA; --hint:#99948A; --gold:#C9A86A; --gold2:#E9D3A1;
+          --line:rgba(201,168,106,.26); --grad:linear-gradient(135deg,#E9D3A1 0%,#C9A86A 45%,#9C7B43 100%); }
   * { box-sizing:border-box; margin:0; padding:0; }
-  html,body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
-  body { min-height:100vh; display:flex; flex-direction:column; align-items:center;
-         background:radial-gradient(60% 50% at 80% 0%,rgba(201,168,106,.14),transparent 70%),var(--bg); }
-  main { width:100%; max-width:960px; padding:28px 16px 40px; }
-  .k { display:inline-block; font-size:11px; font-weight:800; letter-spacing:2.4px; color:var(--gold); border:1px solid var(--line); padding:5px 10px; border-radius:4px; }
-  h1 { font-size:clamp(26px,5vw,42px); line-height:1.12; margin:16px 0 8px; letter-spacing:-.5px; }
-  h1 span { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
-  p.sub { color:var(--hint); font-size:16px; line-height:1.5; max-width:640px; }
-  .vid { margin:24px 0 20px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.6); background:#000; }
+  html,body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.55; }
+  body { background:radial-gradient(60% 40% at 85% 0%,rgba(201,168,106,.14),transparent 70%),var(--bg); }
+  .wrap { width:100%; max-width:980px; margin:0 auto; padding:0 16px; }
+  header.hero { padding:32px 0 8px; }
+  .k { display:inline-block; font-size:11px; font-weight:800; letter-spacing:2.4px; color:var(--gold); border:1px solid var(--line); padding:5px 10px; border-radius:4px; text-transform:uppercase; }
+  h1 { font-size:clamp(28px,5.4vw,46px); line-height:1.1; margin:16px 0 10px; letter-spacing:-.6px; }
+  h2 { font-size:clamp(24px,4vw,34px); line-height:1.15; margin:12px 0 12px; letter-spacing:-.4px; }
+  h3 { font-size:18px; line-height:1.3; margin-bottom:6px; }
+  .g { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  p { color:var(--body); font-size:16.5px; }
+  p + p { margin-top:10px; }
+  .lead { font-size:18px; max-width:700px; }
+  .vid { margin:24px 0 18px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.6); background:#000; }
   video { display:block; width:100%; height:auto; aspect-ratio:16/9; }
   .row { display:flex; flex-wrap:wrap; gap:10px; }
-  .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 22px; border-radius:10px; font-weight:800; font-size:15px; text-decoration:none; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; border-radius:10px; font-weight:800; font-size:15px; text-decoration:none; }
   .btn.gold { background:var(--grad); color:#15130F; }
   .btn.ghost { border:1px solid var(--line); color:var(--text); }
-  footer { margin-top:28px; color:var(--hint); font-size:13px; }
+  nav.toc { margin:28px 0 8px; display:flex; flex-wrap:wrap; gap:8px; }
+  nav.toc a { font-size:13.5px; color:var(--text); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:7px 12px; background:rgba(255,255,255,.02); }
+  section.s { padding:44px 0; border-top:1px solid rgba(255,255,255,.06); }
+  .num { font-size:12px; font-weight:800; letter-spacing:2.2px; color:var(--gold); text-transform:uppercase; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:20px; }
+  .card { background:var(--card); border:1px solid rgba(255,255,255,.07); border-radius:14px; padding:18px; }
+  .card.hl { border-color:var(--line); background:linear-gradient(160deg,#241F16,#141416); }
+  .card .n { font-size:28px; font-weight:800; color:var(--gold); line-height:1; margin-bottom:10px; }
+  .card p { font-size:15px; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:22px; }
+  .shot { text-align:center; }
+  .shot img { width:100%; max-width:260px; border-radius:22px; border:1px solid var(--line); box-shadow:0 18px 40px rgba(0,0,0,.5); display:block; margin:0 auto; }
+  .shot span { display:block; margin-top:10px; font-size:14px; font-weight:700; color:var(--gold2); }
+  .split { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; margin-top:18px; }
+  .split img { width:100%; max-width:280px; border-radius:22px; border:1px solid var(--line); justify-self:center; }
+  ul.ck { list-style:none; margin-top:14px; display:grid; gap:10px; }
+  ul.ck li { color:var(--body); font-size:16px; padding-left:28px; position:relative; }
+  ul.ck li::before { content:""; position:absolute; left:0; top:6px; width:16px; height:16px; border-radius:4px; background:var(--grad); }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0; margin-top:20px; border:1px solid rgba(255,255,255,.08); border-radius:14px; overflow:hidden; }
+  .step { padding:18px; background:var(--card); border-right:1px solid rgba(255,255,255,.06); }
+  .step:last-child { background:linear-gradient(160deg,#2A2418,#141416); border-right:0; }
+  .step b { display:block; color:var(--gold); font-size:13px; letter-spacing:1.5px; margin-bottom:4px; }
+  .quote { margin-top:10px; padding:28px; border-radius:16px; background:var(--grad); color:#15130F; }
+  .quote h2 { color:#15130F; margin:0 0 8px; }
+  .quote p { color:#2A2418; font-size:17px; }
+  .note { font-size:13px; color:var(--hint); margin-top:12px; }
+  footer { padding:30px 0 50px; border-top:1px solid rgba(255,255,255,.06); color:var(--hint); font-size:14px; }
+  @media (max-width:720px) { .split { grid-template-columns:1fr; } .step { border-right:0; border-bottom:1px solid rgba(255,255,255,.06); } }
 </style>
 </head>
 <body>
-<main>
-  <span class="k">TEXNO MARKAZ · PREMIUM</span>
-  <h1>Telefon narxlash <span>ilovasi</span></h1>
-  <p class="sub">Telegram ichida ishlaydigan, Texno Markaz brendidagi xizmat: mijoz 2 daqiqada telefonining narxini biladi, ariza esa darhol xodimlaringizga keladi.</p>
-  <div class="vid">
-    <video src="texno-video.mp4" poster="texno-video-poster.jpg" controls playsinline preload="metadata"></video>
-  </div>
-  <div class="row">
-    <a class="btn gold" href="https://t.me/TexnoMarkazpremium_bot">Botni ochish — @TexnoMarkazpremium_bot</a>
-    <a class="btn ghost" href="texno-video.mp4" download>Videoni yuklab olish</a>
-  </div>
-  <footer>Aloqa: +998 55 520 00 02</footer>
-</main>
+<div class="wrap">
+  <header class="hero">
+    <span class="k">Texno Markaz · Premium</span>
+    <h1>Telefon narxlash <span class="g">ilovasi</span></h1>
+    <p class="lead">Telegram ichida ishlaydigan, Texno Markaz brendidagi xizmat: mijoz 2 daqiqada telefonining narxini biladi, ariza esa darhol xodimlaringizga keladi.</p>
+    <div class="vid"><video src="texno-video.mp4" poster="texno-video-poster.jpg" controls playsinline preload="metadata"></video></div>
+    <div class="row">
+      <a class="btn gold" href="https://t.me/TexnoMarkazpremium_bot">Botni ochish — @TexnoMarkazpremium_bot</a>
+      <a class="btn ghost" href="texno-video.mp4" download>Videoni yuklab olish</a>
+    </div>
+    <nav class="toc">
+      <a href="#imkon">Imkoniyat</a><a href="#ilova">Ilova</a><a href="#foyda">Brend uchun foyda</a><a href="#mijoz">Mijoz uchun</a>
+      <a href="#oqim">Mijoz oqimi</a><a href="#reklama">Reklama</a><a href="#elon">E'lonlar</a><a href="#nazorat">Nazorat</a><a href="#qadamlar">Ishga tushirish</a>
+    </nav>
+  </header>
+
+  <section class="s" id="imkon">
+    <div class="num">01 · Imkoniyat</div>
+    <h2>Telefon sotmoqchi bo‘lgan har bir mijoz avval narxini qidiradi</h2>
+    <p>Bugun mijoz OLX va do‘konlarni aylanib chiqadi, har joyda boshqacha narx eshitadi. Oxir-oqibat u birinchi bo‘lib aniq javob bergan joyga boradi — ko‘pincha raqobatchiga.</p>
+    <p>Bu ilova o‘sha birinchi aniq javobni <b style="color:var(--text)">Texno Markaz nomidan</b> beradi: mijozning telefonida, 2 daqiqada.</p>
+    <div class="cards">
+      <div class="card"><div class="n">01</div><h3>Hozir</h3><p>Mijoz OLX va do‘konlarni aylanadi, har joyda boshqa narx eshitadi.</p></div>
+      <div class="card"><div class="n">02</div><h3>Natijada</h3><p>U birinchi aniq javob bergan joyga boradi.</p></div>
+      <div class="card hl"><div class="n">03</div><h3>Texno Markaz bilan</h3><p>Aniq javobni birinchi bo‘lib siz berasiz.</p></div>
+    </div>
+  </section>
+
+  <section class="s" id="ilova">
+    <div class="num">02 · Ilova</div>
+    <h2>Uch qadam — va mijoz narxni biladi</h2>
+    <p>Hech narsa o‘rnatish shart emas: ilova Telegram ichida ochiladi. Logotip, ranglar va nom — Texno Markaz premium. Mijoz modelni tanlaydi, telefon rasmida shikastlangan joylarni belgilaydi, batareya holatini kiritadi va darhol naqd hamda trade-in narxini ko‘radi.</p>
+    <div class="shots">
+      <div class="shot"><img src="img/sell_home.jpg" alt="Bosh sahifa" loading="lazy"><span>1 · Modelni tanlaydi</span></div>
+      <div class="shot"><img src="img/sell_damage.jpg" alt="Telefon holatini belgilash" loading="lazy"><span>2 · Holatini belgilaydi</span></div>
+      <div class="shot"><img src="img/sell_result.jpg" alt="Baholash natijasi" loading="lazy"><span>3 · Narxni ko‘radi</span></div>
+    </div>
+  </section>
+
+  <section class="s" id="foyda">
+    <div class="num">03 · Brend uchun foyda</div>
+    <h2>Ilova Texno Markazga nima beradi</h2>
+    <p>Ilova ish vaqtidan tashqarida ham ishlaydi va har kuni yangi mijozlarni olib keladi. Asosiy foydalar to‘rtta:</p>
+    <div class="cards">
+      <div class="card"><h3>Qo‘shimcha mijoz oqimi</h3><p>Har bir baholash — ismi va telefoni bilan tayyor ariza.</p></div>
+      <div class="card"><h3>Yangi telefon savdosi</h3><p>Trade-in bonusi mijozni eski telefonini topshirib, yangisini sizdan olishga undaydi.</p></div>
+      <div class="card"><h3>O‘z mijozlar bazangiz</h3><p>Ilovadan foydalangan har bir odam bot orqali sizda qoladi — keyingi aksiyalar uchun.</p></div>
+      <div class="card hl"><h3>Premium obro‘</h3><p>Zamonaviy raqamli servis Texno Markazni raqobatchilardan ajratib turadi.</p></div>
+    </div>
+  </section>
+
+  <section class="s" id="mijoz">
+    <div class="num">04 · Mijoz uchun yengillik</div>
+    <h2>Hammasi bitta joyda, telefonida</h2>
+    <div class="split">
+      <div>
+        <p>Mijoz do‘konga kelmasdan oldin hamma narsani bilib oladi va tayyor bo‘lib keladi:</p>
+        <ul class="ck">
+          <li>Istalgan vaqtda — kechasi ham baholash</li>
+          <li>Yangi iPhone narxlari so‘mda, kurs bo‘yicha</li>
+          <li>Nasiya kalkulyatori: 2 oydan 12 oygacha</li>
+          <li>Kuryer telefonni o‘zi olib ketadi</li>
+          <li>Telefonini bepul e’lon qilish</li>
+          <li>O‘zbek va rus tillarida</li>
+        </ul>
+      </div>
+      <img src="img/nasiya2.jpg" alt="Nasiya kalkulyatori" loading="lazy">
+    </div>
+  </section>
+
+  <section class="s" id="oqim">
+    <div class="num">05 · Mijoz oqimi</div>
+    <h2>Reklamadan do‘koningizgacha — bitta yo‘l</h2>
+    <p>Mijoz yo‘li to‘rt qadamdan iborat. Har bir qadam hisobotda ko‘rinadi — reklama qayerda yaxshi ishlayotganini bilasiz.</p>
+    <div class="steps">
+      <div class="step"><b>1 · HAVOLA</b><p>Instagram, Telegram kanal, do‘kondagi QR-kod</p></div>
+      <div class="step"><b>2 · BAHOLASH</b><p>Mijoz 2 daqiqada narxni biladi</p></div>
+      <div class="step"><b>3 · ARIZA</b><p>Ism va telefon darhol xodimingizga keladi</p></div>
+      <div class="step"><b>4 · SAVDO</b><p>Mijoz do‘konga keladi yoki kuryer boradi</p></div>
+    </div>
+  </section>
+
+  <section class="s" id="reklama">
+    <div class="num">06 · Reklama va aksiyalar</div>
+    <h2>Ilova ichidagi o‘z reklama doskangiz</h2>
+    <div class="split">
+      <div>
+        <p>Bosh sahifada va natija sahifasida o‘z aksiyalaringizni ko‘rsatasiz. Har bir bannerning boshlanish va tugash sanasi bor — o‘zi chiqadi, o‘zi yo‘qoladi. Nechta odam ko‘rgani va bosgani hisobotda chiqadi.</p>
+        <ul class="ck">
+          <li>Chegirma va sovg‘alar</li>
+          <li>Trade-in bonusi</li>
+          <li>Yangi kelgan modellar va aksessuarlar</li>
+        </ul>
+        <p class="note">Rasmdagi aksiya — namuna.</p>
+      </div>
+      <img src="img/banner.jpg" alt="Ilova ichidagi aksiya banneri, namuna" loading="lazy">
+    </div>
+  </section>
+
+  <section class="s" id="elon">
+    <div class="num">07 · Bepul e’lonlar</div>
+    <h2>Kanalingiz o‘zi o‘sadi</h2>
+    <p>Mijozlar telefonini rasm va narx bilan bepul e’lon qiladi. E’lon siz tasdiqlaganingizdan so‘ng Texno Markaz kanalida chiqadi. Natijada kanalda doimiy yangi kontent, yangi obunachilar va har bir e’lon ostida ilovangizga havola bo‘ladi.</p>
+    <div class="shots">
+      <div class="shot"><img src="img/listing_form_photos.jpg" alt="E'lon berish formasi" loading="lazy"><span>E’lon formasi</span></div>
+      <div class="shot"><img src="img/listing_sent.jpg" alt="E'lon yuborildi" loading="lazy"><span>Tekshiruvga yuborildi</span></div>
+    </div>
+  </section>
+
+  <section class="s" id="nazorat">
+    <div class="num">08 · Nazorat</div>
+    <h2>Hech bir mijoz e’tibordan chetda qolmaydi</h2>
+    <div class="cards">
+      <div class="card"><h3>Ariza darhol</h3><p>Xodimlar guruhiga keladi: model, holati, narxi, mijozning ismi va telefoni.</p></div>
+      <div class="card"><h3>Holat va eslatma</h3><p>«Qabul qildim», «Qo‘ng‘iroq qilindi», «Sotib olindi» tugmalari. 30 daqiqa javobsiz qolsa — eslatma.</p></div>
+      <div class="card hl"><h3>Kunlik hisobot</h3><p>Har kuni kechqurun: nechta odam ochdi, nechta ariza keldi, qanchasi sotuvga aylandi.</p></div>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="quote">
+      <h2>Har bir baholash — yangi mijoz.</h2>
+      <p>Ilova kun-u tun Texno Markaz nomidan ishlaydi: mijozni kutib oladi, narx aytadi va arizani xodimingizga uzatadi.</p>
+    </div>
+  </section>
+
+  <section class="s" id="qadamlar">
+    <div class="num">09 · Ishga tushirish</div>
+    <h2>Ilova tayyor — to‘rt qadam qoldi</h2>
+    <div class="cards">
+      <div class="card"><div class="n">1</div><h3>Arizalar guruhi</h3><p>Xodimlar uchun Telegram guruh — arizalar shu yerga tushadi.</p></div>
+      <div class="card"><div class="n">2</div><h3>E’lonlar kanali</h3><p>Texno Markaz kanali — tasdiqlangan e’lonlar uchun.</p></div>
+      <div class="card"><div class="n">3</div><h3>Havola va QR-kod</h3><p>Instagram, kanal va do‘kon kassasi yonida.</p></div>
+      <div class="card"><div class="n">4</div><h3>Birinchi aksiya</h3><p>Ilovadagi banner orqali — masalan, trade-in bonusi.</p></div>
+    </div>
+    <div class="row" style="margin-top:22px"><a class="btn gold" href="https://t.me/TexnoMarkazpremium_bot">Botni ochish</a></div>
+  </section>
+
+  <footer>Texno Markaz premium · Aloqa: +998 55 520 00 02</footer>
+</div>
 </body>
 </html>
